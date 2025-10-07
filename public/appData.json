@@ -1,0 +1,506 @@
+[
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png",
+    "title": "Instagram",
+    "companyName": "Meta Platforms",
+    "id": 1,
+    "description": "Share photos and videos with friends and followers",
+    "size": 156,
+    "reviews": 125000000,
+    "ratingAvg": 4.5,
+    "downloads": "5B+",
+    "ratings": [
+      { "name": "1 star", "count": 5000000 },
+      { "name": "2 star", "count": 7500000 },
+      { "name": "3 star", "count": 15000000 },
+      { "name": "4 star", "count": 35000000 },
+      { "name": "5 star", "count": 62500000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/767px-WhatsApp.svg.png",
+    "title": "WhatsApp Messenger",
+    "companyName": "Meta Platforms",
+    "id": 2,
+    "description": "Simple. Secure. Reliable messaging and calling",
+    "size": 89,
+    "reviews": 180000000,
+    "ratingAvg": 4.3,
+    "downloads": "10B+",
+    "ratings": [
+      { "name": "1 star", "count": 9000000 },
+      { "name": "2 star", "count": 12600000 },
+      { "name": "3 star", "count": 23400000 },
+      { "name": "4 star", "count": 54000000 },
+      { "name": "5 star", "count": 81000000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/TikTok_logo.svg/512px-TikTok_logo.svg.png",
+    "title": "TikTok",
+    "companyName": "ByteDance",
+    "id": 3,
+    "description": "Create and share short entertaining videos",
+    "size": 178,
+    "reviews": 95000000,
+    "ratingAvg": 4.6,
+    "downloads": "3.5B+",
+    "ratings": [
+      { "name": "1 star", "count": 2850000 },
+      { "name": "2 star", "count": 4750000 },
+      { "name": "3 star", "count": 11400000 },
+      { "name": "4 star", "count": 28500000 },
+      { "name": "5 star", "count": 47500000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Spotify_icon.svg/512px-Spotify_icon.svg.png",
+    "title": "Spotify",
+    "companyName": "Spotify AB",
+    "id": 4,
+    "description": "Music and podcasts streaming service",
+    "size": 124,
+    "reviews": 72000000,
+    "ratingAvg": 4.4,
+    "downloads": "1B+",
+    "ratings": [
+      { "name": "1 star", "count": 2880000 },
+      { "name": "2 star", "count": 5040000 },
+      { "name": "3 star", "count": 10080000 },
+      { "name": "4 star", "count": 23040000 },
+      { "name": "5 star", "count": 30960000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/512px-YouTube_full-color_icon_%282017%29.svg.png",
+    "title": "YouTube",
+    "companyName": "Google LLC",
+    "id": 5,
+    "description": "Watch, upload and share videos",
+    "size": 145,
+    "reviews": 220000000,
+    "ratingAvg": 4.2,
+    "downloads": "10B+",
+    "ratings": [
+      { "name": "1 star", "count": 13200000 },
+      { "name": "2 star", "count": 17600000 },
+      { "name": "3 star", "count": 33000000 },
+      { "name": "4 star", "count": 66000000 },
+      { "name": "5 star", "count": 90200000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/512px-Netflix_2015_logo.svg.png",
+    "title": "Netflix",
+    "companyName": "Netflix Inc",
+    "id": 6,
+    "description": "Watch TV shows and movies anytime, anywhere",
+    "size": 198,
+    "reviews": 58000000,
+    "ratingAvg": 4.5,
+    "downloads": "1B+",
+    "ratings": [
+      { "name": "1 star", "count": 1740000 },
+      { "name": "2 star", "count": 2900000 },
+      { "name": "3 star", "count": 6960000 },
+      { "name": "4 star", "count": 17400000 },
+      { "name": "5 star", "count": 29000000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/512px-2023_Facebook_icon.svg.png",
+    "title": "Facebook",
+    "companyName": "Meta Platforms",
+    "id": 7,
+    "description": "Connect with friends and the world around you",
+    "size": 168,
+    "reviews": 145000000,
+    "ratingAvg": 3.9,
+    "downloads": "5B+",
+    "ratings": [
+      { "name": "1 star", "count": 21750000 },
+      { "name": "2 star", "count": 20300000 },
+      { "name": "3 star", "count": 30450000 },
+      { "name": "4 star", "count": 37700000 },
+      { "name": "5 star", "count": 34800000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/512px-Amazon_logo.svg.png",
+    "title": "Amazon Shopping",
+    "companyName": "Amazon Mobile LLC",
+    "id": 8,
+    "description": "Shop millions of products and deals",
+    "size": 142,
+    "reviews": 48000000,
+    "ratingAvg": 4.6,
+    "downloads": "500M+",
+    "ratings": [
+      { "name": "1 star", "count": 1440000 },
+      { "name": "2 star", "count": 2400000 },
+      { "name": "3 star", "count": 5760000 },
+      { "name": "4 star", "count": 14400000 },
+      { "name": "5 star", "count": 24000000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Uber_logo_2018.svg/512px-Uber_logo_2018.svg.png",
+    "title": "Uber",
+    "companyName": "Uber Technologies",
+    "id": 9,
+    "description": "Request a ride and get picked up by a nearby driver",
+    "size": 186,
+    "reviews": 35000000,
+    "ratingAvg": 4.1,
+    "downloads": "500M+",
+    "ratings": [
+      { "name": "1 star", "count": 2450000 },
+      { "name": "2 star", "count": 3850000 },
+      { "name": "3 star", "count": 6650000 },
+      { "name": "4 star", "count": 10500000 },
+      { "name": "5 star", "count": 11550000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Snapchat_logo.svg/512px-Snapchat_logo.svg.png",
+    "title": "Snapchat",
+    "companyName": "Snap Inc",
+    "id": 10,
+    "description": "Share moments with friends through photos and videos",
+    "size": 167,
+    "reviews": 82000000,
+    "ratingAvg": 4.3,
+    "downloads": "1B+",
+    "ratings": [
+      { "name": "1 star", "count": 4100000 },
+      { "name": "2 star", "count": 5740000 },
+      { "name": "3 star", "count": 10660000 },
+      { "name": "4 star", "count": 24600000 },
+      { "name": "5 star", "count": 36900000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/512px-Gmail_icon_%282020%29.svg.png",
+    "title": "Gmail",
+    "companyName": "Google LLC",
+    "id": 11,
+    "description": "Fast, organized email by Google",
+    "size": 97,
+    "reviews": 92000000,
+    "ratingAvg": 4.4,
+    "downloads": "10B+",
+    "ratings": [
+      { "name": "1 star", "count": 3680000 },
+      { "name": "2 star", "count": 6440000 },
+      { "name": "3 star", "count": 12880000 },
+      { "name": "4 star", "count": 29440000 },
+      { "name": "5 star", "count": 39560000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png",
+    "title": "Twitter (X)",
+    "companyName": "X Corp",
+    "id": 12,
+    "description": "Stay connected to what matters most",
+    "size": 134,
+    "reviews": 67000000,
+    "ratingAvg": 3.8,
+    "downloads": "500M+",
+    "ratings": [
+      { "name": "1 star", "count": 10050000 },
+      { "name": "2 star", "count": 10720000 },
+      { "name": "3 star", "count": 15410000 },
+      { "name": "4 star", "count": 17420000 },
+      { "name": "5 star", "count": 13400000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/512px-Telegram_logo.svg.png",
+    "title": "Telegram",
+    "companyName": "Telegram FZ-LLC",
+    "id": 13,
+    "description": "Pure instant messaging — simple, fast, secure",
+    "size": 78,
+    "reviews": 54000000,
+    "ratingAvg": 4.7,
+    "downloads": "1B+",
+    "ratings": [
+      { "name": "1 star", "count": 1080000 },
+      { "name": "2 star", "count": 1620000 },
+      { "name": "3 star", "count": 4320000 },
+      { "name": "4 star", "count": 13500000 },
+      { "name": "5 star", "count": 33480000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Google_Maps_Logo_2020.svg/512px-Google_Maps_Logo_2020.svg.png",
+    "title": "Google Maps",
+    "companyName": "Google LLC",
+    "id": 14,
+    "description": "Real-time GPS navigation and traffic",
+    "size": 112,
+    "reviews": 98000000,
+    "ratingAvg": 4.4,
+    "downloads": "10B+",
+    "ratings": [
+      { "name": "1 star", "count": 3920000 },
+      { "name": "2 star", "count": 6860000 },
+      { "name": "3 star", "count": 13720000 },
+      { "name": "4 star", "count": 31360000 },
+      { "name": "5 star", "count": 42140000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Zoom_Communications_Logo.svg/512px-Zoom_Communications_Logo.svg.png",
+    "title": "Zoom",
+    "companyName": "Zoom Video Communications",
+    "id": 15,
+    "description": "Video conferencing and cloud meetings",
+    "size": 145,
+    "reviews": 43000000,
+    "ratingAvg": 4.4,
+    "downloads": "500M+",
+    "ratings": [
+      { "name": "1 star", "count": 1720000 },
+      { "name": "2 star", "count": 3010000 },
+      { "name": "3 star", "count": 6020000 },
+      { "name": "4 star", "count": 13760000 },
+      { "name": "5 star", "count": 18490000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/98/Discord_logo.svg/512px-Discord_logo.svg.png",
+    "title": "Discord",
+    "companyName": "Discord Inc",
+    "id": 16,
+    "description": "Talk, chat, hang out with communities",
+    "size": 156,
+    "reviews": 38000000,
+    "ratingAvg": 4.5,
+    "downloads": "500M+",
+    "ratings": [
+      { "name": "1 star", "count": 1140000 },
+      { "name": "2 star", "count": 1900000 },
+      { "name": "3 star", "count": 4560000 },
+      { "name": "4 star", "count": 11400000 },
+      { "name": "5 star", "count": 19000000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/480px-LinkedIn_logo_initials.png",
+    "title": "LinkedIn",
+    "companyName": "LinkedIn Corporation",
+    "id": 17,
+    "description": "Professional networking and job search",
+    "size": 132,
+    "reviews": 52000000,
+    "ratingAvg": 4.3,
+    "downloads": "500M+",
+    "ratings": [
+      { "name": "1 star", "count": 2080000 },
+      { "name": "2 star", "count": 3640000 },
+      { "name": "3 star", "count": 6760000 },
+      { "name": "4 star", "count": 15600000 },
+      { "name": "5 star", "count": 23920000 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBRoE5DcalLnKRtZfuKddbpQxE2rGNLe6jXw&s",
+    "title": "Canva",
+    "companyName": "Canva Pty Ltd",
+    "id": 18,
+    "description": "Design graphics, videos and documents",
+    "size": 189,
+    "reviews": 28000000,
+    "ratingAvg": 4.7,
+    "downloads": "100M+",
+    "ratings": [
+      { "name": "1 star", "count": 560000 },
+      { "name": "2 star", "count": 840000 },
+      { "name": "3 star", "count": 2240000 },
+      { "name": "4 star", "count": 7000000 },
+      { "name": "5 star", "count": 17360000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Shazam_icon.svg/512px-Shazam_icon.svg.png",
+    "title": "Shazam",
+    "companyName": "Apple Inc",
+    "id": 19,
+    "description": "Identify songs in seconds",
+    "size": 87,
+    "reviews": 32000000,
+    "ratingAvg": 4.6,
+    "downloads": "500M+",
+    "ratings": [
+      { "name": "1 star", "count": 960000 },
+      { "name": "2 star", "count": 1600000 },
+      { "name": "3 star", "count": 3840000 },
+      { "name": "4 star", "count": 9600000 },
+      { "name": "5 star", "count": 16000000 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJhyOBkI9m73a63Ayf9uQFQdDrLA5aTSJahQ&s",
+    "title": "Duolingo",
+    "companyName": "Duolingo",
+    "id": 20,
+    "description": "Learn languages for free",
+    "size": 124,
+    "reviews": 42000000,
+    "ratingAvg": 4.6,
+    "downloads": "500M+",
+    "ratings": [
+      { "name": "1 star", "count": 1260000 },
+      { "name": "2 star", "count": 2100000 },
+      { "name": "3 star", "count": 5040000 },
+      { "name": "4 star", "count": 12600000 },
+      { "name": "5 star", "count": 21000000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Notion_app_logo.png/512px-Notion_app_logo.png",
+    "title": "Notion",
+    "companyName": "Notion Labs Inc",
+    "id": 21,
+    "description": "Notes, docs, tasks and wikis in one place",
+    "size": 156,
+    "reviews": 18000000,
+    "ratingAvg": 4.5,
+    "downloads": "50M+",
+    "ratings": [
+      { "name": "1 star", "count": 540000 },
+      { "name": "2 star", "count": 900000 },
+      { "name": "3 star", "count": 2160000 },
+      { "name": "4 star", "count": 5400000 },
+      { "name": "5 star", "count": 9000000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/512px-Adobe_Photoshop_CC_icon.svg.png",
+    "title": "Adobe Photoshop Express",
+    "companyName": "Adobe Inc",
+    "id": 22,
+    "description": "Photo editor and collage maker",
+    "size": 178,
+    "reviews": 24000000,
+    "ratingAvg": 4.4,
+    "downloads": "100M+",
+    "ratings": [
+      { "name": "1 star", "count": 960000 },
+      { "name": "2 star", "count": 1680000 },
+      { "name": "3 star", "count": 3360000 },
+      { "name": "4 star", "count": 7680000 },
+      { "name": "5 star", "count": 10320000 }
+    ]
+  },
+  {
+    "image": "https://i.pinimg.com/originals/12/0f/a1/120fa16139a3a3abe54e5603d06eb857.gif",
+    "title": "Fitbit",
+    "companyName": "Google LLC",
+    "id": 23,
+    "description": "Health and fitness tracking",
+    "size": 143,
+    "reviews": 26000000,
+    "ratingAvg": 4.2,
+    "downloads": "100M+",
+    "ratings": [
+      { "name": "1 star", "count": 1560000 },
+      { "name": "2 star", "count": 2340000 },
+      { "name": "3 star", "count": 4420000 },
+      { "name": "4 star", "count": 7800000 },
+      { "name": "5 star", "count": 9880000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/512px-PayPal.svg.png",
+    "title": "PayPal",
+    "companyName": "PayPal Mobile",
+    "id": 24,
+    "description": "Send and receive money securely",
+    "size": 134,
+    "reviews": 45000000,
+    "ratingAvg": 4.5,
+    "downloads": "500M+",
+    "ratings": [
+      { "name": "1 star", "count": 1350000 },
+      { "name": "2 star", "count": 2250000 },
+      { "name": "3 star", "count": 5400000 },
+      { "name": "4 star", "count": 13500000 },
+      { "name": "5 star", "count": 22500000 }
+    ]
+  },
+  {
+    "image": "https://t.ctcdn.com.br/iKOeSjICEhUfKKaSZfldFzUKxV8=/600x600/smart/i456535.png",
+    "title": "Headspace",
+    "companyName": "Headspace Inc",
+    "id": 25,
+    "description": "Meditation and sleep made simple",
+    "size": 165,
+    "reviews": 19000000,
+    "ratingAvg": 4.5,
+    "downloads": "50M+",
+    "ratings": [
+      { "name": "1 star", "count": 570000 },
+      { "name": "2 star", "count": 950000 },
+      { "name": "3 star", "count": 2280000 },
+      { "name": "4 star", "count": 5700000 },
+      { "name": "5 star", "count": 9500000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bd/Reddit_Logo_Icon.svg/512px-Reddit_Logo_Icon.svg.png",
+    "title": "Reddit",
+    "companyName": "Reddit Inc",
+    "id": 26,
+    "description": "Dive into anything and join communities",
+    "size": 148,
+    "reviews": 36000000,
+    "ratingAvg": 4.3,
+    "downloads": "100M+",
+    "ratings": [
+      { "name": "1 star", "count": 1440000 },
+      { "name": "2 star", "count": 2520000 },
+      { "name": "3 star", "count": 4680000 },
+      { "name": "4 star", "count": 10800000 },
+      { "name": "5 star", "count": 16560000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Pinterest-logo.png/480px-Pinterest-logo.png",
+    "title": "Pinterest",
+    "companyName": "Pinterest Inc",
+    "id": 27,
+    "description": "Discover recipes, home ideas, style inspiration",
+    "size": 139,
+    "reviews": 51000000,
+    "ratingAvg": 4.5,
+    "downloads": "500M+",
+    "ratings": [
+      { "name": "1 star", "count": 1530000 },
+      { "name": "2 star", "count": 2550000 },
+      { "name": "3 star", "count": 6120000 },
+      { "name": "4 star", "count": 15300000 },
+      { "name": "5 star", "count": 25500000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Twitch_logo.svg/512px-Twitch_logo.svg.png",
+    "title": "Twitch",
+    "companyName": "Twitch Interactive Inc",
+    "id": 28,
+    "description": "Watch live streams of games, esports and more",
+    "size": 167,
+    "reviews": 29000000,
+    "ratingAvg": 4.4,
+    "downloads": "100M+",
+    "ratings": [
+      { "name": "1 star", "count": 1160000 },
+      { "name": "2 star", "count": 2030000 },
+      { "name": "3 star", "count": 4060000 },
+      { "name": "4 star", "count": 9280000 },
+      { "name": "5 star", "count": 12470000 }
+    ]
+  }
+]

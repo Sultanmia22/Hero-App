@@ -4,7 +4,7 @@ import playImg from '../assets/PlayStore.png.png'
 import bannerImg from '../assets/hero.png'
 const Banner = () => {
     return (
-        <div className='my-20'>
+        <div className='py-20'>
             <div className='text-center'>
                 <h1 className='text-6xl font-bold  text-center mb-5'>We Build <br /> <span className='text-transparent bg-clip-text font-bold bg-gradient-to-r from-[#632EE3] to-[#9F62F2]'>Productive </span> Apps</h1>
                 <p>At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br /> Our goal is to turn your ideas into digital experiences that truly make an impact.</p>

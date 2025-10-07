@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import logoImg from '../assets/logo.png'
 import githubImg from '../assets/github.png.png'
 const Navbar = () => {
@@ -18,10 +18,10 @@ const Navbar = () => {
         <NavLink to='/installaion'> Installation </NavLink>
       </ul>
     </div>
-    <div className='flex items-center gap-1'>
+    <Link className='flex items-center gap-1'>
         <a className=" text-xl"> <img src={logoImg} alt="" className='max-w-10 max-h-10' /> </a>
         <p className='text-transparent bg-clip-text font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] p-2'>HERO.IO</p>
-    </div>
+    </Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 space-x-4 font-semibold">
