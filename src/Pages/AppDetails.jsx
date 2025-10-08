@@ -2,18 +2,35 @@ import React from 'react';
 import ratingImg from '../assets/icon-ratings.png'
 import downloadsImg from '../assets/icon-downloads.png'
 import iconImg from '../assets/icon-review.png'
+import { Link,  useParams } from 'react-router';
+import RatingChart from '../Components/RatingChart';
+import useApps from '../Hook/useApps';
 
-import { Link, useLoaderData, useParams } from 'react-router';
+
+
 
 const AppDetails = () => {
 
-    const appData = useLoaderData()
+    const {appsData,loading,error} = useApps()
 
     const {clickId} = useParams()
 
-    const detailsAppData = appData.find(app => app.id === parseInt(clickId))
+    const detailsAppData = appsData.find(app => app.id === parseInt(clickId))
+
+   if (loading) {
+        return <h2 className="text-center text-2xl mt-20">Loading...</h2>
+    }
+
+    if (error) {
+        return <h2 className="text-center text-2xl mt-20 text-red-500">Error: {error}</h2>
+    }
+
+    if (!detailsAppData) {
+        return <h2 className="text-center text-2xl mt-20">App not found!</h2>
+    }
 
     const { image, title, companyName, id, description, size, reviews, ratingAvg, downloads, ratings } = detailsAppData
+
     return (
         <div className='px-[80px] py-20'>
 
@@ -55,15 +72,23 @@ const AppDetails = () => {
 
                     </div>
                     
-                    <Link className='px-[20px] py-[14px] rounded-[4px] bg-[#00D390] text-xl text-white'> Install Now {size} </Link>
+                    <Link className='px-[20px] py-[14px] rounded-[4px] bg-[#00D390] text-xl text-white'> Install Now ({size} MB) </Link>
                     
                 </div>
 
             </div>
 
             {/* Chart */}
-            <div className='max-h-[400px]'>
-                <h2 className='text-[24px] font-bold'>Ratings</h2>
+            <div className='mt-10'>
+                <h2 className='text-[24px] font-bold mb-4'>Ratings</h2>
+                <div>
+                    <RatingChart  detailsAppData={detailsAppData}></RatingChart>
+                </div>
+            </div>
+
+            <div>
+                <h2 className='text-[24px] font-semibold'>Description</h2>
+                <p> {description} </p>
             </div>
 
         </div>

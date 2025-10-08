@@ -4,20 +4,22 @@ import Home from "../Pages/Home";
 import Apps from "../Pages/Apps";
 import Installation from "../Pages/Installation";
 import AppDetails from "../Pages/AppDetails";
+import Errorpage from "../Pages/Errorpage";
 const router = createBrowserRouter([
   {
     path: "/",
     Component:MainLayout,
+    errorElement: <Errorpage></Errorpage>,
     children:[
         {
             index:true,
-            loader:() => fetch('/appData.json'),
+           
             Component:Home,
         },
 
         {
             path:'/home',
-            loader:() => fetch('/appData.json'),
+            
             Component: Home
         },
 
@@ -34,7 +36,7 @@ const router = createBrowserRouter([
 
         {
             path: '/appDetails/:clickId',
-            loader:() => fetch('/appData.json'),
+           
             Component: AppDetails
         }
     ]

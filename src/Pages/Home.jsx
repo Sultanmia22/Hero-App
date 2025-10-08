@@ -1,12 +1,13 @@
 import React from 'react';
 import Banner from '../Components/Banner';
-import { Link, useLoaderData } from 'react-router';
+import { Link,} from 'react-router';
 import HomeAppCard from '../Components/HomeAppCard';
+import useApps from '../Hook/useApps';
 
 const Home = () => {
-    const appData = useLoaderData()
+      const {appsData,loading,error} = useApps()
 
-    const dataFoHome = appData.slice(0,8)
+    const dataFoHome = appsData.slice(0,8)
     console.log(dataFoHome);
     return (
         <div>

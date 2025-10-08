@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import { CiSearch } from "react-icons/ci";
-import { useLoaderData } from 'react-router';
 import AppsCard from '../Components/AppsCard';
+import useApps from '../Hook/useApps';
 const Apps = () => {
 
-    const appData = useLoaderData()
+    const {appsData,loading,error} = useApps()
 
     const [searchApp,setSearchApp] = useState('')
 
     const term = searchApp.trim().toLowerCase()
-    
-    const searchAppData = term ? appData.filter(app => app.title.toLowerCase().includes(term))   : appData
+
+    const searchAppData = term ? appsData.filter(app => app.title.toLowerCase().includes(term))   : appsData
      
     return (
         <div className='max-w-[1600px] mx-auto'>
@@ -20,7 +20,7 @@ const Apps = () => {
             </div>
 
             <div className='flex flex-col md:flex-row gap-6 md:gap-0 justify-between items-center'>
-                <p className='font-bold text-[24px]'> ({appData.length}) Apps Found </p>
+                <p className='font-bold text-[24px]'> ({appsData.length}) Apps Found </p>
                 <label className="input">
                     <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <g
