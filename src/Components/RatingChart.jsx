@@ -10,7 +10,7 @@ const RatingChart = ({ detailsAppData }) => {
 
     console.log(reversRatingData);
     return (
-        <div className='w-[600px] h-[400px]'>
+        <div className='w-[600px] h-[400px] '>
           <BarChart width={600} height={400} data={reversRatingData}>
             <XAxis dataKey='name'></XAxis>
             <YAxis></YAxis>

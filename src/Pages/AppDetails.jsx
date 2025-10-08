@@ -29,7 +29,27 @@ const AppDetails = () => {
         return <h2 className="text-center text-2xl mt-20">App not found!</h2>
     }
 
+    
+
     const { image, title, companyName, id, description, size, reviews, ratingAvg, downloads, ratings } = detailsAppData
+
+    const handleInstall = () => {
+        const storedAppData = JSON.parse(localStorage.getItem('installedApps'));
+        let updateAppData = [];
+        if(storedAppData){
+         const  isDuplicate = storedAppData.some( app => app.id === detailsAppData.id)
+
+            if(isDuplicate) return alert('This App is already installed')
+
+            updateAppData = [...storedAppData,detailsAppData]
+        }
+        else{
+            updateAppData.push(detailsAppData)
+        }
+
+        localStorage.setItem('installedApps',JSON.stringify(updateAppData))
+    }
+
 
     return (
         <div className='px-[80px] py-20'>
@@ -72,7 +92,7 @@ const AppDetails = () => {
 
                     </div>
                     
-                    <Link className='px-[20px] py-[14px] rounded-[4px] bg-[#00D390] text-xl text-white'> Install Now ({size} MB) </Link>
+                    <Link onClick={ handleInstall } className='px-[20px] py-[14px] rounded-[4px] bg-[#00D390] text-xl text-white'> Install Now ({size} MB) </Link>
                     
                 </div>
 
