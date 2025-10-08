@@ -2,6 +2,8 @@ import { createBrowserRouter } from "react-router";
 import MainLayout from "../Layouts/MainLayout";
 import Home from "../Pages/Home";
 import Apps from "../Pages/Apps";
+import Installation from "../Pages/Installation";
+import AppDetails from "../Pages/AppDetails";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -21,11 +23,19 @@ const router = createBrowserRouter([
 
         {
             path:'/apps',
+            loader:() => fetch('/appData.json'),
             Component: Apps
         },
 
         {
-            path:'/installaion'
+            path:'/installaion',
+            Component: Installation
+        },
+
+        {
+            path: '/appDetails/:clickId',
+            loader:() => fetch('/appData.json'),
+            Component: AppDetails
         }
     ]
   },
