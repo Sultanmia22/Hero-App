@@ -8,6 +8,12 @@ const Home = () => {
       const {appsData,loading,error} = useApps()
 
     const dataFoHome = appsData.slice(0,8)
+
+    if(loading){
+        return <div className='flex  justify-center items-center md:pt-16'>
+             <div>  <h2 className='text-6xl font-bold'> Loading... </h2> </div>
+        </div>
+    }
     console.log(dataFoHome);
     return (
         <div>

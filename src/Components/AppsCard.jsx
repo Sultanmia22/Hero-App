@@ -7,7 +7,7 @@ const AppsCard = ({app}) => {
         const { image, title, companyName, id, description, size, reviews, ratingAvg, downloads, ratings } = app 
 
     return (
-        <Link to={`/appDetails/${id}`}>
+        <Link to={`/apps/${id}`}>
         <div>
              <div className='rounded-lg mx-4'>
                         <div className="card bg-base-100 p-5 shadow-sm">

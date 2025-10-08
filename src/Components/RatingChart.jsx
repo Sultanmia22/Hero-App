@@ -1,5 +1,5 @@
 import React from 'react';
-import { Bar, BarChart, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis } from 'recharts';
 
 
 const RatingChart = ({ detailsAppData }) => {
@@ -10,12 +10,14 @@ const RatingChart = ({ detailsAppData }) => {
 
     console.log(reversRatingData);
     return (
-        <div className='w-[600px] h-[400px] '>
-          <BarChart width={600} height={400} data={reversRatingData}>
+        <div className=' w-full md:w-[600px] h-[600px]'>
+         <ResponsiveContainer width='100%' height='100%'>
+             <BarChart  data={reversRatingData}>
             <XAxis dataKey='name'></XAxis>
             <YAxis></YAxis>
-            <Bar dataKey='count' fill='#FF8811'></Bar>
+            <Bar dataKey='count' fill='#FF8811' barSize={70}></Bar>
           </BarChart>
+         </ResponsiveContainer>
         </div>
     );
 };

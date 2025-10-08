@@ -5,12 +5,19 @@ import useApps from '../Hook/useApps';
 const Apps = () => {
 
     const {appsData,loading,error} = useApps()
+    
 
     const [searchApp,setSearchApp] = useState('')
 
     const term = searchApp.trim().toLowerCase()
 
     const searchAppData = term ? appsData.filter(app => app.title.toLowerCase().includes(term))   : appsData
+  
+    if(loading){
+        return <div className='flex  justify-center items-center md:pt-16'>
+             <div>  <h2 className='text-6xl font-bold'> Loading... </h2> </div>
+        </div>
+    }
      
     return (
         <div className='max-w-[1600px] mx-auto'>

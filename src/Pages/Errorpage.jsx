@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import errorImg from '../assets/error-404.png'
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
-import { Link } from 'react-router';
+import { Link} from 'react-router';
 const Errorpage = () => {
+   
     return (
         <div className='flex flex-col min-h-[100vh]'>
             <Navbar></Navbar>
@@ -16,7 +17,7 @@ const Errorpage = () => {
                 <h2 className='text-[48px] font-semibold'>Oops, page not found!</h2>
                 <p>The page you are looking for is not available.</p>
               </div>
-              <div className='flex justify-center'>
+              <div className='flex justify-center my-5'>
                 <Link to='/home' className='btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white'> Go Back </Link>
               </div>
            </div>

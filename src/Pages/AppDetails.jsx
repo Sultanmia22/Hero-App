@@ -1,45 +1,75 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ratingImg from '../assets/icon-ratings.png'
 import downloadsImg from '../assets/icon-downloads.png'
 import iconImg from '../assets/icon-review.png'
 import { Link,  useParams } from 'react-router';
 import RatingChart from '../Components/RatingChart';
 import useApps from '../Hook/useApps';
+import { toast, ToastContainer} from 'react-toastify';
+import noutFoundImg from '../assets/App-Error.png'
+
+
 
 
 
 
 const AppDetails = () => {
 
+    const [installedApp,setInstalledApp] = useState(false)
+
+ 
+
     const {appsData,loading,error} = useApps()
 
     const {clickId} = useParams()
+  
 
-    const detailsAppData = appsData.find(app => app.id === parseInt(clickId))
+  const detailsAppData = appsData.find(app => app.id === parseInt(clickId))
+  
 
-   if (loading) {
+    
+    useEffect(()=> {
+        const storedAppData = JSON.parse(localStorage.getItem('installedApps'));
+        console.log(storedAppData);
+        const dataAvailable = storedAppData.find(app => app.id == clickId)
+        console.log(dataAvailable);
+        if(dataAvailable){
+            setInstalledApp(true)
+        }
+    },[clickId])
+   
+    
+
+    if (loading) {
         return <h2 className="text-center text-2xl mt-20">Loading...</h2>
     }
 
     if (error) {
         return <h2 className="text-center text-2xl mt-20 text-red-500">Error: {error}</h2>
     }
-
-    if (!detailsAppData) {
-        return <h2 className="text-center text-2xl mt-20">App not found!</h2>
+   
+    if(!detailsAppData){
+        return <div className='pt-12'>
+              <div className='flex justify-center items-center'> <img src={noutFoundImg} alt="" /> </div>
+             <div className='text-center my-5'>
+                <h2 className='text-[48px] font-semibold'>Oops, page not found!</h2>
+                <p>The page you are looking for is not available.</p>
+              </div>
+              <div className='flex justify-center my-5'>
+                <Link to='/home' className='btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white'> Go Back </Link>
+              </div>
+        </div>
     }
+   
 
-    
+
 
     const { image, title, companyName, id, description, size, reviews, ratingAvg, downloads, ratings } = detailsAppData
 
     const handleInstall = () => {
         const storedAppData = JSON.parse(localStorage.getItem('installedApps'));
         let updateAppData = [];
-        if(storedAppData){
-         const  isDuplicate = storedAppData.some( app => app.id === detailsAppData.id)
-
-            if(isDuplicate) return alert('This App is already installed')
+        if(storedAppData){ 
 
             updateAppData = [...storedAppData,detailsAppData]
         }
@@ -48,11 +78,18 @@ const AppDetails = () => {
         }
 
         localStorage.setItem('installedApps',JSON.stringify(updateAppData))
+
+        toast(`${title} App Installed Successfully!`)
+       
+        setInstalledApp(true)
+
     }
+
+ 
 
 
     return (
-        <div className='px-[80px] py-20'>
+        <div className=' px-10 md:px-[80px] py-20'>
 
             {/* Information */}
             <div className='flex gap-20 flex-col md:flex-row border-b-2 border-gray-200 pb-10'>
@@ -70,7 +107,7 @@ const AppDetails = () => {
 
                     <div className='border-b-2 border-gray-200 my-5 w-full'></div>
 
-                    <div className='flex my-10 gap-16 '>
+                    <div className='flex my-10 gap-5 md:gap-16 '>
 
                         <div className='flex flex-col justify-between'>
                             <img src={downloadsImg} alt="" className='w-[28px] h-[28px]' />
@@ -92,7 +129,7 @@ const AppDetails = () => {
 
                     </div>
                     
-                    <Link onClick={ handleInstall } className='px-[20px] py-[14px] rounded-[4px] bg-[#00D390] text-xl text-white'> Install Now ({size} MB) </Link>
+                    <button disabled={installedApp} onClick={ handleInstall } className={`px-[20px] py-[14px] rounded-[4px] bg-[#00D390] text-xl text-white`}  >  {installedApp ? 'Installed' : 'Install Now'} ({size} MB) </button>
                     
                 </div>
 
@@ -102,7 +139,7 @@ const AppDetails = () => {
             <div className='mt-10'>
                 <h2 className='text-[24px] font-bold mb-4'>Ratings</h2>
                 <div>
-                    <RatingChart  detailsAppData={detailsAppData}></RatingChart>
+                    <RatingChart     detailsAppData={detailsAppData}></RatingChart>
                 </div>
             </div>
 
@@ -110,8 +147,9 @@ const AppDetails = () => {
                 <h2 className='text-[24px] font-semibold'>Description</h2>
                 <p> {description} </p>
             </div>
-
+            <ToastContainer />
         </div>
+        
     );
 };
 

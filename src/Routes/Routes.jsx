@@ -35,10 +35,11 @@ const router = createBrowserRouter([
         },
 
         {
-            path: '/appDetails/:clickId',
+            path: '/apps/:clickId',
            
             Component: AppDetails
-        }
+        },
+
     ]
   },
 ]);
