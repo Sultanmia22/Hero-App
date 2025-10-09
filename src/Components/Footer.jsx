@@ -13,7 +13,7 @@ const Footer = () => {
                     <p className='text-white'>HERO.IO</p>
                 </div>
 
-                <div className="col text-white">
+                <div className="col ">
                     <h4 className='text-xl mb-3'>Explore</h4>
                     <ul className='space-y-4 text-white'>
                         <li><a href="/categories">Categories</a></li>
