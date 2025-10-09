@@ -70,7 +70,7 @@ const Apps = () => {
             </div>
 
              <div className='text-black flex flex-col justify-center items-center mt-10'>
-                <h2 className='text-5xl font-bold'> {searchingData.length == 0 ? ' No Apps Found ' : ''} </h2>
+                <h2 className='text-5xl font-bold'> {searchingData.length == 0  && searchLoading === false ? ' No Apps Found ' : ''} </h2>
             </div>
 
             {
