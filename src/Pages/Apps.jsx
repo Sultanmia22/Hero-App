@@ -44,7 +44,7 @@ const Apps = () => {
     return (
 
 
-        <div className='max-w-[1600px] mx-auto'>
+        <div className=' mx-4 md:mx-[80px]'>
             <div className='text-center pt-20 pb-10'>
                 <h2 className='text-[48px] font-bold'>Our All Applications</h2>
                 <p className='text-[20px] text-[#627382]'> Explore All Apps on the Market developed by us. We code for Millions </p>
@@ -82,7 +82,7 @@ const Apps = () => {
                     </div>
 
                     :
-                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-[1600px] mx-auto gap-6 pb-10 md:pb-20'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-6 pb-10 md:pb-20'>
                         {
                             searchingData.map(app => <AppsCard key={app.id} app={app} />)
                         }

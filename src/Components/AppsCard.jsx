@@ -9,7 +9,7 @@ const AppsCard = ({app}) => {
     return (
         <Link to={`/apps/${id}`}>
         <div>
-             <div className='rounded-lg md:mx-0 mx-4'>
+             <div className='rounded-lg md:mx-0 '>
                         <div className="card bg-base-100 p-5 shadow-sm">
                           
                                 <figure className='border-2 border-gray-200'>

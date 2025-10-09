@@ -91,12 +91,12 @@ const AppDetails = () => {
 
 
     return (
-        <div className=' px-10 md:px-[80px] py-20'>
+        <div className='mx-5 md:mx-[80px] py-20'>
 
             {/* Information */}
             <div className='flex gap-20 flex-col md:flex-row border-b-2 border-gray-200 pb-10'>
 
-                <div className='border-2 border-gray-200 p-4'>
+                <div className=' p-4  bg-white shadow rounded-lg'>
                     <figure>
                         <img src={image} alt="" className='max-w-[350px] max-h-[350px] mx-auto'/>
                     </figure>

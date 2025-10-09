@@ -56,7 +56,7 @@ if(loading){
     }
 
     return (
-        <div className='max-w-[1600px] mx-auto'>
+        <div className=' mx-5 md:mx-[80px] py-20'>
             
             <div className='py-15 text-center space-y-4'>
                 <h2 className='text-5xl font-bold'>Your Installed Apps</h2>
