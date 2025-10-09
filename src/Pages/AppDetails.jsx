@@ -24,14 +24,14 @@ const AppDetails = () => {
     const {clickId} = useParams()
   
 
-  const detailsAppData = appsData.find(app => app.id === parseInt(clickId))
+  const detailsAppData = appsData?.find(app => app.id === parseInt(clickId))
   
 
     
     useEffect(()=> {
         const storedAppData = JSON.parse(localStorage.getItem('installedApps'));
         console.log(storedAppData);
-        const dataAvailable = storedAppData.find(app => app.id == clickId)
+        const dataAvailable = storedAppData?.find(app => app.id == clickId)
         console.log(dataAvailable);
         if(dataAvailable){
             setInstalledApp(true)
