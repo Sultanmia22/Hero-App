@@ -25,11 +25,11 @@ const Installation = () => {
 
  const handleSorted = (() => {
      if(sortedApp === 'size-asc'){
-         return [...installedApp].sort((a,b) => a.size - b.size)
+         return [...installedApp].sort((a,b) => a.downloads - b.downloads)
      }
 
      else if(sortedApp === 'size-dsc'){
-         return [...installedApp].sort((a,b) => b.size - a.size)
+         return [...installedApp].sort((a,b) => b.downloads - a.downloads)
      }
 
      else{
@@ -67,7 +67,7 @@ if(loading){
                 <h2 className='text-2xl font-semibold'> ({(installedApp.length)}) Apps Found </h2>
                 <label>
                     <select className='select'  value={sortedApp} onChange={(e) => setSortedApp(e.target.value)}>
-                        <option value="none"> Sort By Size </option>
+                        <option value="none"> Sort By Download </option>
                         <option value="size-asc">Low To High</option>
                         <option value="size-dsc"> High To Low </option>
                     </select>

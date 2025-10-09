@@ -114,7 +114,7 @@ const AppDetails = () => {
                         <div className='flex flex-col justify-between'>
                             <img src={downloadsImg} alt="" className='w-[28px] h-[28px]' />
                             <p className='mt-4'>Downloads</p>
-                            <p className='text-[40px] font-extrabold'> {downloads} </p>
+                            <p className='text-[40px] font-extrabold'> {downloads}M</p>
                         </div>
 
                         <div className='flex flex-col justify-between'>

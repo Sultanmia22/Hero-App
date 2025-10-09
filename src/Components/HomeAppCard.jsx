@@ -21,7 +21,7 @@ const HomeAppCard = ({ homeData }) => {
                         <div className='flex justify-between items-center'>
                             <div className='flex items-center bg-[#F1F5E8] px-[10px] py-[6px] gap-2'>
                                 <span><img src={downloadsImg} alt="" className='w-4' /></span>
-                                <p className='font-semibold text-[#00D390]'>{downloads} </p>
+                                <p className='font-semibold text-[#00D390]'>{downloads}M</p>
                             </div>
                             <div className='flex items-center bg-[#FFF0E1] px-[10px] py-[6px] gap-2'>
                                 <p className='font-semibold text-[#FF8811]'> {ratingAvg} </p>

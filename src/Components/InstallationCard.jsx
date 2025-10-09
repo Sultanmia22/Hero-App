@@ -22,7 +22,7 @@ const InstallationCard = ({istalldata , handleRemove}) => {
 
                             <div className='flex items-center gap-1'>
                                 <img src={downloadsImg} alt="" className='w-5 h-5' />
-                                <span>{downloads}</span>
+                                <span>{downloads}M</span>
                             </div>
 
                              <div className='flex items-center gap-1'>
