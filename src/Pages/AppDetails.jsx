@@ -49,15 +49,17 @@ const AppDetails = () => {
     }
    
     if(!detailsAppData){
-        return <div className='pt-12'>
+        return <div>
+            <div className='pt-12'>
               <div className='flex justify-center items-center'> <img src={noutFoundImg} alt="" /> </div>
              <div className='text-center my-5'>
-                <h2 className='text-[48px] font-semibold'>Oops, page not found!</h2>
-                <p>The page you are looking for is not available.</p>
+                <h2 className='text-[48px] font-semibold'>Oops, App not found!</h2>
+                <p>The App you are looking for is not available.</p>
               </div>
-              <div className='flex justify-center my-5'>
+              <div className='flex justify-center py-5'>
                 <Link to='/home' className='btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white'> Go Back </Link>
               </div>
+        </div>
         </div>
     }
    

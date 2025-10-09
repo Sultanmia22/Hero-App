@@ -3,12 +3,23 @@ import InstallationCard from '../Components/InstallationCard';
 
 const Installation = () => {
 
+  const [loading,setLoading] = useState(true)
+
+  
+
   const [installedApp,setInstalledApp] = useState([])
 
   useEffect(()=> {
      const storedApp = JSON.parse(localStorage.getItem('installedApps'))
     setInstalledApp(storedApp);
+
+     const timerId = setTimeout(()=> {
+        setLoading(false)
+    },500)
+
   },[]) 
+
+
 
   const [sortedApp,setSortedApp] = useState(null)
 
@@ -38,8 +49,15 @@ const Installation = () => {
 
  }
 
+if(loading){
+        return <div className='flex  justify-center items-center md:pt-16'>
+             <div className='flex items-center gap-2'>  <span class="loading loading-spinner w-[55px] h-[55px]"></span>  <h2 className='text-6xl font-bold'> Loading... </h2> </div>
+        </div>
+    }
+
     return (
         <div className='max-w-[1600px] mx-auto'>
+            
             <div className='py-15 text-center space-y-4'>
                 <h2 className='text-5xl font-bold'>Your Installed Apps</h2>
                 <p className='text-[#627382]'>Explore All Trending Apps on the Market developed by us</p>

@@ -6,13 +6,13 @@ const HomeAppCard = ({ homeData }) => {
     const { image, title, companyName, id, description, size, reviews, ratingAvg, downloads, ratings } = homeData
 
     return (
-        <div className='rounded-lg mx-4'>
+        <div className='rounded-lg mx-4 md:mx-0'>
             <div className="card bg-base-100 p-5 shadow-sm">
               
                     <figure className='border-2 border-gray-200'>
                         <img
                             src={image}
-                            alt="Shoes" className='w-[300px] h-[300px] rounded-lg object-contain ' />
+                            alt="Shoes" className='w-[200px] h-[300px] rounded-lg object-contain py-4' />
                     </figure>
               
                 <div className="">

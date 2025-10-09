@@ -1,25 +1,49 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { CiSearch } from "react-icons/ci";
 import AppsCard from '../Components/AppsCard';
 import useApps from '../Hook/useApps';
 const Apps = () => {
 
-    const {appsData,loading,error} = useApps()
-    
+    const { appsData, loading, error } = useApps()
 
-    const [searchApp,setSearchApp] = useState('')
 
-    const term = searchApp.trim().toLowerCase()
+    const [inputData, setInputData] = useState('')
 
-    const searchAppData = term ? appsData.filter(app => app.title.toLowerCase().includes(term))   : appsData
-  
-    if(loading){
+    const [searchingData, setSearchingData] = useState(appsData)
+
+    const [searchLoading, setSearchLoading] = useState(false)
+
+    useEffect(() => {
+        setSearchLoading(true)
+        const timerId = setTimeout(() => {
+
+            const term = inputData.trim().toLowerCase()
+
+            const searchingData = term ? appsData.filter(app => app.title.toLowerCase().includes(term)) : appsData
+
+            setSearchingData(searchingData)
+            setSearchLoading(false)
+
+        }, 1000)
+
+
+    }, [inputData, appsData])
+
+
+
+
+    if (loading) {
         return <div className='flex  justify-center items-center md:pt-16'>
-             <div>  <h2 className='text-6xl font-bold'> Loading... </h2> </div>
+            <div className='flex items-center gap-2'>  <span class="loading loading-spinner w-[55px] h-[55px]"></span>  <h2 className='text-6xl font-bold'> Loading... </h2> </div>
         </div>
     }
-     
+
+
+
+
     return (
+
+
         <div className='max-w-[1600px] mx-auto'>
             <div className='text-center pt-20 pb-10'>
                 <h2 className='text-[48px] font-bold'>Our All Applications</h2>
@@ -41,20 +65,36 @@ const Apps = () => {
                             <path d="m21 21-4.3-4.3"></path>
                         </g>
                     </svg>
-                    <input  value={searchApp} onChange={(e)=> setSearchApp(e.target.value)} type="search" required placeholder="Search" />
+                    <input value={inputData} onChange={(e) => setInputData(e.target.value)} type="search" required placeholder="Search" />
                 </label>
             </div>
 
-            <div className='text-black flex flex-col justify-center items-center mt-10'>
-                <h2 className='text-5xl font-bold'> {searchAppData.length === 0 ? ' No Apps Found ' : ''} </h2>
+             <div className='text-black flex flex-col justify-center items-center mt-10'>
+                <h2 className='text-5xl font-bold'> {searchingData.length == 0 ? ' No Apps Found ' : ''} </h2>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-[1600px] mx-auto gap-3 pb-10 md:pb-20'>
-                {
-                    searchAppData.map(app => <AppsCard  key={app.id} app={app} />)
-                }
-            </div>
+            {
+
+                searchLoading ?
+
+                    <div className='flex  justify-center items-center md:pt-16'>
+                        <div className='flex items-center gap-2'>  <span class="loading loading-spinner w-[55px] h-[55px]"></span>  <h2 className='text-6xl font-bold'> Loading... </h2> </div>
+                    </div>
+
+                    :
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-[1600px] mx-auto gap-6 pb-10 md:pb-20'>
+                        {
+                            searchingData.map(app => <AppsCard key={app.id} app={app} />)
+                        }
+                    </div>
+
+            }
+
+            
+
         </div>
+
+
     );
 };
 

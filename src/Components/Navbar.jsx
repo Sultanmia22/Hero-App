@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, NavLink } from 'react-router';
 import logoImg from '../assets/logo.png'
 import githubImg from '../assets/github.png.png'
+import './Navbar.css'
 const Navbar = () => {
     return (
        <div className="navbar bg-base-100 shadow-sm md:px-20">
@@ -25,7 +26,7 @@ const Navbar = () => {
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 space-x-6 font-semibold">
-       <NavLink className='text-lg'  to='/home'> Home </NavLink>
+       <NavLink  className='text-lg'  to='/home'> Home </NavLink>
         <NavLink className='text-lg' to='/apps'> Apps </NavLink>
         <NavLink className='text-lg' to='/installaion'> Installation </NavLink>
     </ul>
