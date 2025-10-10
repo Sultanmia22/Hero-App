@@ -41,7 +41,9 @@ const AppDetails = () => {
     
 
     if (loading) {
-        return <h2 className="text-center text-2xl mt-20">Loading...</h2>
+         return <div className='flex  justify-center items-center md:pt-16'>
+             <div className='flex items-center gap-2'>  <span class="loading loading-spinner w-[55px] h-[55px]"></span>  <h2 className='text-6xl font-bold'> Loading... </h2> </div>
+        </div>
     }
 
     if (error) {

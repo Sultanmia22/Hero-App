@@ -1,11 +1,14 @@
 import React from 'react';
 import ratingImg from '../assets/icon-ratings.png'
 import downloadsImg from '../assets/icon-downloads.png'
+import { Link } from 'react-router';
+
 const HomeAppCard = ({ homeData }) => {
 
     const { image, title, companyName, id, description, size, reviews, ratingAvg, downloads, ratings } = homeData
 
     return (
+       <Link to={`/apps/${id}`}>
         <div>
             <div className='rounded-lg md:mx-0 '>
                 <div className="card bg-base-100 p-5 shadow-sm">
@@ -32,6 +35,7 @@ const HomeAppCard = ({ homeData }) => {
                 </div>
             </div>
         </div>
+        </Link>
     );
 };
 
